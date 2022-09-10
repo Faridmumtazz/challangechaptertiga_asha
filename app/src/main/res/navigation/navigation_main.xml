@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeNavFragment">
+
+    <fragment
+        android:id="@+id/homeNavFragment"
+        android:name="asha.binar.challangechaptertiga.HomeNavFragment"
+        android:label="fragment_home_nav"
+        tools:layout="@layout/fragment_home_nav" >
+        <action
+            android:id="@+id/action_homeNavFragment_to_wordNavFragment"
+            app:destination="@id/wordNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordNavFragment"
+        android:name="asha.binar.challangechaptertiga.WordNavFragment"
+        android:label="fragment_word_nav"
+        tools:layout="@layout/fragment_word_nav" />
+</navigation>
